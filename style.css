@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
-*, *::after, *::before{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,52 +14,52 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --color-primary: #F4BF00;
+  --color-primary: #f4bf00;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   /* background-color: #f2f2f2; */
 }
 
-.section-title{
+.section-title {
   font-size: 3rem;
   text-transform: capitalize;
   text-align: center;
   color: var(--color-primary);
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.header__logo-text{
+.header__logo-text {
   font-size: 2rem;
   color: var(--color-primary);
 }
 
-.header__nav--link{
+.header__nav--link {
   text-decoration: none;
   display: inline-block;
   padding: 1rem 4rem;
   text-transform: capitalize;
   font-weight: 600;
   color: #333;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
-.header__nav--cta{
+.header__nav--cta {
   text-decoration: none;
   display: inline-block;
   padding: 1.5rem 2rem;
@@ -68,9 +70,10 @@ body{
   font-weight: 600;
 }
 
-.hero{
+.hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)),url(./images/img-bg-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./images/img-bg-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,29 +82,29 @@ body{
   align-items: center;
 }
 
-.hero__details{
+.hero__details {
   display: flex;
   gap: 4rem;
   justify-content: center;
   margin-top: 3rem;
 }
 
-.hero__textbox--text-main{
+.hero__textbox--text-main {
   font-size: 9rem;
-  font-family: 'Mountains of Christmas', serif;
+  font-family: "Mountains of Christmas", serif;
   color: #fff;
   text-transform: capitalize;
   text-align: center;
 }
 
-.hero__detail{
+.hero__detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.hero__detail svg{
+.hero__detail svg {
   --size: 4rem;
   width: var(--size);
   height: var(--size);
@@ -109,12 +112,12 @@ body{
   margin-bottom: 1rem;
 }
 
-.hero__detail--text{
+.hero__detail--text {
   color: #fff;
   font-weight: bold;
 }
 
-.hero__detail--vision{
+.hero__detail--vision {
   color: #fff;
   margin-top: 3rem;
   letter-spacing: 2px;
@@ -140,7 +143,7 @@ body{
 /* end of the about section */
 
 /* event details section */
-.event-details__container{
+.event-details__container {
   display: flex;
   flex-wrap: wrap;
   gap: 10rem;
@@ -150,14 +153,14 @@ body{
   padding: 0 2rem;
 }
 
-.detail{
+.detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 
-.detail svg{
+.detail svg {
   --size: 15rem;
   width: var(--size);
   height: var(--size);
@@ -166,11 +169,11 @@ body{
 /* end of event details section */
 
 /* objectives section */
-.objectives-section{
+.objectives-section {
   margin-top: 4rem;
 }
 
-.objectives__container{
+.objectives__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   place-items: center;
@@ -178,38 +181,38 @@ body{
   padding: 2rem;
 }
 
-.objective{
+.objective {
   /* width: 40rem; */
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-border-radius: 5px;
-overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.objective__image{
+.objective__image {
   height: 30rem;
 }
 
-.objective__image img{
+.objective__image img {
   height: 100%;
   width: 100%;
   display: block;
   object-fit: cover;
 }
 
-.objective__title{
+.objective__title {
   text-align: center;
   text-transform: capitalize;
   padding: 1rem 0;
 }
 
-.objective__text{
+.objective__text {
   text-align: justify;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
-.objective__action{
+.objective__action {
   display: block;
   text-decoration: none;
   padding: 1rem 1.5rem;
@@ -224,7 +227,7 @@ overflow: hidden;
 /* end of objectives section */
 
 /* ticket section */
-.ticket-link{
+.ticket-link {
   display: block;
   text-decoration: none;
   padding: 1.5rem 5rem;
@@ -235,17 +238,16 @@ overflow: hidden;
   font-weight: 700;
   color: #111;
   border-radius: 100px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-.ticket-link:hover{
+.ticket-link:hover {
   transform: scale(1.1);
 }
 /* end of the ticket section */
 
-
 /* footer section stylings */
-.footer{
+.footer {
   padding: 1rem;
   display: flex;
   justify-content: center;
