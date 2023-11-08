@@ -10,12 +10,17 @@
   <body>
     <header class="header">
       <h1 class="header__logo-text">Teens Innovation Week</h1>
-      <nav class="header__nav">
+      <nav class="header__nav nav_closed" id="header__nav">
         <a href="" class="header__nav--link">home</a>
         <a href="" class="header__nav--link">About</a>
         <a href="" class="header__nav--link">objectives</a>
         <a href="" class="header__nav--cta">get a ticket</a>
       </nav>
+      <button class="header__button" id="header__button">
+        <svg>
+          <use xlink:href="sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -276,5 +281,7 @@
         &copy; 2023. All rights reserved. STEAMLabas Africa
       </p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
