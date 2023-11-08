@@ -17,8 +17,24 @@
   --color-primary: #f4bf00;
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
 html {
   font-size: 62.5%;
+}
+
+@media screen and (max-width: 56.25em) {
+  html{
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  html{
+    font-size: 56%;
+  }
 }
 
 body {
@@ -84,6 +100,7 @@ body {
 
 .hero__details {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
   justify-content: center;
   margin-top: 3rem;
@@ -121,6 +138,7 @@ body {
   color: #fff;
   margin-top: 3rem;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 /* about section */
@@ -139,6 +157,19 @@ body {
   flex: 1;
   max-width: 50%;
   padding: 20px;
+}
+
+@media screen and (max-width: 59.375em) {
+  .about__container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .about-image{
+    min-width: 100%;
+  }
 }
 /* end of the about section */
 
@@ -183,9 +214,9 @@ body {
 
 .objective {
   /* width: 40rem; */
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -223,6 +254,19 @@ body {
   border-radius: 3px;
   font-weight: 600;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .objectives__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: .5rem;
+  }
+
+  .objective{
+    width: 100%!important;
+  }
 }
 /* end of objectives section */
 
