@@ -138,8 +138,8 @@ body {
 .hero {
   margin-top: 8rem;
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./images/img-bg-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(./images/home-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body {
 }
 
 .detail svg {
-  --size: 15rem;
+  --size:8rem;
   width: var(--size);
   height: var(--size);
   fill: #71bc6d;
@@ -304,6 +304,7 @@ body {
   border-radius: 3px;
   font-weight: 600;
   margin-top: 1rem;
+  display: none;
 }
 
 @media screen and (max-width: 37.5em) {
@@ -340,6 +341,28 @@ body {
 }
 /* end of the ticket section */
 
+/* sponsor section */
+.sponsors{
+  margin: 10rem auto;
+}
+
+.sponsors__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.sponsor{
+  --size: 16rem;
+  width: var(--size);
+}
+
+.sponsor--width-enlarge{
+  --size: 25rem;
+  width: var(--size);
+}
 /* footer section stylings */
 .footer {
   padding: 1rem;
