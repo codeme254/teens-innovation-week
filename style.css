@@ -371,6 +371,13 @@ body {
   --size: 25rem;
   width: var(--size);
 }
+
+@media screen and (max-width: 900px) {
+  .sponsor{
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
 /* footer section stylings */
 .footer {
   padding: 1rem;
