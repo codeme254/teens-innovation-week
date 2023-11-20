@@ -277,7 +277,7 @@ body {
 
 /* objectives section */
 .objectives-section {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .objectives__container {
@@ -301,7 +301,8 @@ body {
   border-radius: 5px;
   overflow: hidden;
   padding: 1rem;
-  border: 2px solid var(--color-primary);
+  background-color: #fff;
+  backface-visibility: hidden;
 }
 
 .objective__image {
