@@ -64,7 +64,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color:#000;
 }
 
 .header__logo-text {
@@ -78,7 +78,7 @@ body {
   padding: 1rem 4rem;
   text-transform: capitalize;
   font-weight: 600;
-  color: #333;
+  color: #fff;
   transition: all 0.4s ease;
 }
 
@@ -140,6 +140,10 @@ body {
   min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url(./images/home-bg.jpg);
+  background: linear-gradient(#f4bf009d, #f4bf00a6),
+    url(./images/home-bg.jpg);
+    background: linear-gradient(rgba(234, 165, 95)),
+    url(./images/home-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -156,6 +160,10 @@ body {
   margin-top: 3rem;
 }
 
+.hero__textbox > *{
+  color: black!important;
+}
+
 .hero__textbox--text-main {
   font-size: 9rem;
   /* font-family: "Mountains of Christmas", serif; */
@@ -169,18 +177,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .hero__detail svg {
   --size: 4rem;
   width: var(--size);
   height: var(--size);
-  fill: #fff;
+  fill: currentColor;
   margin-bottom: 1rem;
 }
 
 .hero__detail--text {
   color: #fff;
+  color: currentColor;
   font-weight: bold;
 }
 
