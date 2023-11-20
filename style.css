@@ -380,12 +380,24 @@ body {
   margin: 10rem auto;
 }
 
+.sponsors__image-main{
+  display: block;
+  margin: 2rem auto;
+}
+
 .sponsors__container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+  .sponsors__image-main{
+    width: 100%!important;
+    max-width: 100%!important;
+  }
 }
 
 .sponsor {
