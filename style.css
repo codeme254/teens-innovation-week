@@ -260,6 +260,7 @@ body {
 /* objectives section */
 .objectives-section {
   margin-top: 4rem;
+  background-color: #f3f3f3;
 }
 
 .objectives__container {
@@ -282,6 +283,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   padding: 1rem;
+  border: 2px solid var(--color-primary);
 }
 
 .objective__image {
