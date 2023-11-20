@@ -200,10 +200,11 @@ body {
 }
 
 .hero__detail--vision {
-  color: #fff;
   margin-top: 3rem;
   letter-spacing: 2px;
   text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
 /* about section */
