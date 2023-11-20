@@ -380,6 +380,10 @@ body {
   margin: 10rem auto;
 }
 
+.sponsors__title{
+  text-align: center;
+}
+
 .sponsors__image-main{
   display: block;
   margin: 2rem auto;
