@@ -34,3 +34,31 @@ headerNavLinks.forEach((link) => {
     changeMenuIcon();
   });
 });
+
+
+// carousel
+const carousel = document.querySelector('.carousel');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const totalItems = items.length;
+
+  function showItem(index) {
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  function goToNext() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    showItem(currentIndex);
+  }
+
+  function goToPrev() {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    showItem(currentIndex);
+  }
+
+  nextBtn.addEventListener('click', goToNext);
+  prevBtn.addEventListener('click', goToPrev);
