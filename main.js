@@ -14,11 +14,15 @@ const changeMenuIcon = () => {
   }
 };
 
-headerButton.addEventListener("click", (e) => {
+const toggleNav = (e) => {
   e.preventDefault();
   headerNav.classList.toggle("nav_closed");
   changeMenuIcon();
+}
+headerButton.addEventListener("click", (e) => {
+  toggleNav(e);
 });
+headerButton.addEventListener("touchstart", toggleNav);
 
 headerNavLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
