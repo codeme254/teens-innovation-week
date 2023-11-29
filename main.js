@@ -17,7 +17,7 @@ const headerNavLinks = document.querySelectorAll(".header__nav--link");
 const toggleNav = (e) => {
   e.preventDefault();
   headerNav.classList.toggle("nav_closed");
-  changeMenuIcon();
+  // changeMenuIcon();
 }
 headerButton.addEventListener("click", (e) => {
   toggleNav(e);
