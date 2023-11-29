@@ -486,13 +486,37 @@ body {
 }
 
 /* social media section */
+.social-container{
+  display: flex;
+  padding: 1rem 5rem;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .subtitle{
+    text-align: center;
+  }
+
+  iframe{
+    width: 100%;
+  }
+}
+
 .social-media-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
-  padding: 3rem 1rem;
+  padding: 0 1rem;
 }
 
 .social-media,
@@ -513,7 +537,7 @@ body {
 }
 
 /* testimonies */
-.testimonies{
+.testimonies {
   margin: 3rem auto;
 }
 
@@ -553,14 +577,14 @@ body {
   cursor: pointer;
 }
 
-.carousel-button svg{
+.carousel-button svg {
   --size: 3rem;
   width: var(--size);
   height: var(--size);
   fill: #fff;
 }
 
-.testimony{
+.testimony {
   width: 60%;
   padding: 1rem;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
@@ -569,49 +593,49 @@ body {
 }
 
 @media screen and (max-width: 56.25em) {
-  .testimony{
+  .testimony {
     width: 98%;
   }
 }
 
-.testimony::after{
-  content: '\201C';
+.testimony::after {
+  content: "\201C";
   position: absolute;
   top: 0;
   left: 0;
   font-size: 20rem;
   transform: translateY(-50px);
   z-index: -10;
-  color: #999;
+  color: rgba(0, 0, 0, 0.1);
 }
 
-.testimony__text{
+.testimony__text {
   text-align: justify;
   line-height: 1.8;
   margin-bottom: 1rem;
   z-index: 10;
 }
 
-.testimony__author{
+.testimony__author {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.testimony__author--name{
+.testimony__author--name {
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: 800;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-style: oblique;
 }
 
-.testimony__author--positon{
+.testimony__author--positon {
   font-style: oblique;
 }
 
-.carousel-buttons{
+.carousel-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -626,7 +650,6 @@ body {
 .next-btn {
   right: 10px;
 }
-
 
 /* footer section stylings */
 .footer {
