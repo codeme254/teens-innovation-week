@@ -19,7 +19,6 @@
   scroll-behavior: smooth;
 }
 
-
 .u-col-black {
   color: #111 !important;
 }
@@ -72,11 +71,6 @@ body {
   z-index: 10000000;
 }
 
-.header__logo-text {
-  font-size: 2rem;
-  color: var(--color-primary);
-}
-
 .header__nav {
   background-color: #000 !important;
 }
@@ -84,11 +78,12 @@ body {
 .header__nav--link {
   text-decoration: none;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.8rem;
   text-transform: capitalize;
   font-weight: 600;
   color: #fff;
   transition: all 0.4s ease;
+  font-size: 1.5rem;
 }
 
 .header__nav--cta {
@@ -150,10 +145,8 @@ body {
 .hero {
   margin-top: 8rem;
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
-    url(./images/home-bg.jpg);
-  background: linear-gradient(#f4bf009d, #f4bf00a6), url(./images/home-bg.jpg);
-  background: linear-gradient(rgba(234, 165, 95)), url(./images/home-bg.jpg);
+  background: linear-gradient(#f4bf009d, #f4bf00a6),
+    url(./assets/images/home-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,7 +326,7 @@ body {
 }
 
 .objective--5 {
-  transform: translateX(calc(4 * var(--objectives-cards-transform-factor)));
+  transform: translateX(calc(2 * var(--objectives-cards-transform-factor)));
 }
 
 @media screen and (max-width: 75em) {
@@ -485,14 +478,14 @@ body {
 }
 
 /* social media section */
-.social-container{
+.social-container {
   display: flex;
   padding: 1rem 5rem;
   gap: 3rem;
 }
 
 @media screen and (max-width: 56.25em) {
-  .social-container{
+  .social-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -500,18 +493,17 @@ body {
     padding: 1rem;
   }
 
-  .subtitle{
+  .subtitle {
     text-align: center;
   }
 
-  iframe{
+  iframe {
     width: 100%;
   }
 }
 
 .social-media-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
@@ -530,7 +522,7 @@ body {
 }
 
 .social-media svg {
-  --size: 2.5rem;
+  --size: 3rem;
   width: var(--size);
   height: var(--size);
 }

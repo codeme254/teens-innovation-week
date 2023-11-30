@@ -486,14 +486,14 @@ body {
 }
 
 /* social media section */
-.social-container{
+.social-container {
   display: flex;
   padding: 1rem 5rem;
   gap: 3rem;
 }
 
 @media screen and (max-width: 56.25em) {
-  .social-container{
+  .social-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,11 +501,11 @@ body {
     padding: 1rem;
   }
 
-  .subtitle{
+  .subtitle {
     text-align: center;
   }
 
-  iframe{
+  iframe {
     width: 100%;
   }
 }

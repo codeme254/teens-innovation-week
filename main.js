@@ -18,7 +18,7 @@ const toggleNav = (e) => {
   e.preventDefault();
   headerNav.classList.toggle("nav_closed");
   // changeMenuIcon();
-}
+};
 headerButton.addEventListener("click", (e) => {
   toggleNav(e);
 });
