@@ -4,7 +4,7 @@ const Ticket = () => {
       <a
         href="https://forms.gle/bGjp6izcGZ5VKFdf7"
         target="_blank"
-        class="ticket-link"
+        className="ticket-link"
       >
         book a slot
       </a>

@@ -576,7 +576,6 @@ body {
 }
 
 .testimony {
-  width: 60%;
   padding: 1rem;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -649,4 +648,15 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
+}
+
+.slider-container {
+  width: 80rem;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 56.25%) {
+  .splider-container {
+    width: 100%;
+  }
 }
