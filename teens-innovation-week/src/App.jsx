@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Speakers from "./pages/Speakers/Speakers";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/speakers" element={<Speakers />} />
       </Routes>
     </BrowserRouter>
   );
