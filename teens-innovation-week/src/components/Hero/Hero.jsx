@@ -32,6 +32,9 @@ const Hero = () => {
           Cultivate a culture of innovation and creativity in Africa's
           education, empowering solution architects.
         </p>
+        <a href="" className="hero__cta">
+          Book a slot
+        </a>
       </div>
     </section>
   );

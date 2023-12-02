@@ -209,6 +209,24 @@ body {
   font-size: 2rem;
 }
 
+.hero__cta {
+  display: none;
+  width: max-content;
+  margin: 2rem auto;
+  background-color: #000;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 56.25em) {
+  .hero__cta {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 37.5em) {
   .hero {
     padding: 2rem;
