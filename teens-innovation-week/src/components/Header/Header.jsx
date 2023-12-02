@@ -5,45 +5,54 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const navRef = useRef(null);
+
   const [navOpen, setNavOpen] = useState(false);
-  const handleToggleNav = (e) => {
-    e.preventDefault();
-    setNavOpen(!navOpen);
+  const toggleNav = () => {
     if (navOpen) {
       navRef.current.classList.remove("nav_closed");
     } else {
       navRef.current.classList.add("nav_closed");
     }
   };
+  const handleToggleNav = (e) => {
+    // e.preventDefault();
+    setNavOpen(!navOpen);
+    toggleNav();
+  };
+  const closeNav = () => {
+    setNavOpen(false);
+    toggleNav();
+  };
   return (
     <header className="header">
       <img src={logoImage} alt="logo" width="180" className="logo" />
       <nav className="header__nav nav_closed" id="header__nav" ref={navRef}>
-        <a href="/#home" className="header__nav--link">
+        <a href="/#home" onClick={closeNav} className="header__nav--link">
           home
         </a>
-        <a href="/#about" className="header__nav--link">
+        <a href="/#about" onClick={closeNav} className="header__nav--link">
           About
         </a>
-        <a href="/#objectives" className="header__nav--link">
+        <a href="/#objectives" onClick={closeNav} className="header__nav--link">
           objectives
         </a>
-        <a href="/#sponsors" className="header__nav--link">
+        <a href="/#sponsors" onClick={closeNav} className="header__nav--link">
           Sponsors
         </a>
-        <a href="/#contact" className="header__nav--link">
+        <a href="/#contact" onClick={closeNav} className="header__nav--link">
           Get in touch
         </a>
-        <Link className="header__nav--link" to="/speakers">
+        <Link className="header__nav--link" onClick={closeNav} to="/speakers">
           speakers
         </Link>
-        <Link className="header__nav--link" to="/schedule">
+        <Link className="header__nav--link" onClick={closeNav} to="/schedule">
           schedule
         </Link>
         <a
           href="https://forms.gle/bGjp6izcGZ5VKFdf7"
           target="_blank"
           className="header__nav--cta"
+          onClick={closeNav}
         >
           book a slot
         </a>
