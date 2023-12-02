@@ -721,3 +721,59 @@ body {
   padding: 0.5rem 0;
   text-align: center;
 }
+
+.table-container {
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-right: 1px solid #ddd;
+}
+
+@media screen and (max-width: 40.625em) {
+  .table-container {
+    width: 99vw;
+  }
+}
+
+@media screen and (max-width: 34.375em) {
+  table {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 24.375em) {
+  table {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 20.625em) {
+  table {
+    font-size: 0.85rem;
+  }
+}
