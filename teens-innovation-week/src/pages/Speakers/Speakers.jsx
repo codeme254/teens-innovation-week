@@ -1,7 +1,10 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Speaker from "./Speaker";
-import img from "../../assets/images/speaker5.jpg";
+import isaac from "../../assets/images/isaac-macharia.jpg";
+import drOmbui from "../../assets/images/dr-ombui.jpg";
+import kambo from "../../assets/images/kambo.jpeg";
+import imgDefault from "../../assets/images/user-placeholder.png";
 import img2 from "../../assets/images/speaker7.jpg";
 import img3 from "../../assets/images/speaker8.jpg";
 const Speakers = () => {
@@ -11,19 +14,39 @@ const Speakers = () => {
       <h3 className="section-title u-marg-top-lg">Speakers</h3>
       <div className="speakers__container">
         <Speaker
-          image={img}
-          speakerName="Jane doe"
-          occupation="STEAM educator @STEAMLabs"
+          image={isaac}
+          speakerName="Isaac Macharia Gathu"
+          occupation="President and founder of Mars Society Kenya"
         />
         <Speaker
-          image={img2}
-          speakerName="Jane doe"
-          occupation="STEAM educator @STEAMLabs"
+          image={drOmbui}
+          speakerName=" Dr. Edward Ombui"
+          occupation="Dean of School of Science and Technology of Africa Nazarene University"
         />
         <Speaker
-          image={img3}
-          speakerName="Jane doe"
-          occupation="STEAM educator @STEAMLabs"
+          image={kambo}
+          speakerName="Mary W. Kambo"
+          occupation="Cybergirls Alumna representing Cybersafe Foundation, with expertise in Technology and Innovation"
+        />
+        <Speaker
+          image={imgDefault}
+          speakerName="Noreen Kassam"
+          occupation="World Largest Lesson"
+        />
+        <Speaker
+          image={imgDefault}
+          speakerName="Andrew Masila"
+          occupation="Head of Innovations, Safaricom"
+        />
+        <Speaker
+          image={imgDefault}
+          speakerName="Virginia Wawira"
+          occupation="MPESA GO, Product Owner"
+        />
+        <Speaker
+          image={imgDefault}
+          speakerName="Jasin Owili"
+          occupation="CEO Afribot"
         />
       </div>
       <Footer />
