@@ -694,13 +694,19 @@ body {
   }
 
   .speaker {
-    width: 100%;
+    width: 100% !important;
   }
 }
 .speaker__image {
   height: 30rem;
   width: 100%;
   /* border: 3px solid red; */
+}
+
+@media screen and (max-width: 37.5em) {
+  .speaker__image {
+    height: 55rem;
+  }
 }
 
 .speaker__image--img {
