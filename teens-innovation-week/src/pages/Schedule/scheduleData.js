@@ -2,7 +2,7 @@ export const day1 = [
   {
     event: "Opening Remarks",
     description: "Open the event",
-    guests: ["Felix Malombe", "Afandi Indiatsi"],
+    guests: ["Felix Malombe",", ", "Afandi Indiatsi"],
     duration: "10",
     start: "9:00:00 AM",
     end: "9:10:00 AM",
@@ -82,3 +82,98 @@ export const day1 = [
     end: "2:05:00 PM",
   },
 ];
+
+export const day2 = [
+    {
+      event: "Opening Remarks",
+      description: "Recap and opening the day",
+      guests: ["MC"],
+      duration: "10",
+      start: "9:00:00 AM",
+      end: "9:10:00 AM",
+    },
+    {
+      event: "Keynote",
+      description: "Halftime keynote",
+      guests: ["Noreen Kassam - World's Largest Lesson"],
+      duration: "30",
+      start: "9:10:00 AM",
+      end: "9:40:00 AM",
+    },
+    {
+      event: "Presentation",
+      description:
+        "Financial Literacy",
+      guests: ["Virginia Wawira - MPESA Go, Product Owner"],
+      duration: "30",
+      start: "9:40:00 AM",
+      end: "10:10:00 AM",
+    },
+    {
+        event: "Break",
+        description:
+          "Break",
+        guests: ["Break"],
+        duration: "30",
+        start: "10:10:00 AM",
+        end: "10:40:00 AM",
+    },
+    {
+      event: "Panel discussion",
+      description: "Industry 4.0 and AI, something to fear or something to look forward to? (the fears associated with Industry 4.0 and AI, the challenges currently faced, the benefits to look forward to, your role in such a industry)      ",
+      guests: ["June Omune - The Action Foundation", ", ", "Mary Kambo - Cybergirls", ", ", "Jassin Owili - Afribot", ", ", "Nissi Keza - Moderator"],
+      duration: "40",
+      start: "10:40:00 AM",
+      end: "11:20:00 AM",
+    },
+    {
+      event: "Workshop",
+      description: "Factivism",
+      guests: ["Noreen Kassam - World's Largest Lesson"],
+      duration: "40",
+      start: "11:20:00 AM",
+      end: "12:00:00 PM",
+    },
+    {
+      event: "Lunch",
+      description: "Lunch",
+      guests: ["Luch"],
+      duration: "50",
+      start: "12:00:00 PM",
+      end: "12:50:00 PM",
+    },
+    {
+      event: "Presentation",
+      description: "Read to work",
+      guests: ["Absa bank, Kenya"],
+      duration: "20",
+      start: "11:30:00 AM",
+      end: "11:50:00 AM",
+    },
+    {
+      event: "Lunch",
+      description: "Lunch",
+      guests: ["Lunch"],
+      duration: "50",
+      start: "11:50:00 AM",
+      end: "12:50:00 PM",
+    },
+    {
+      event: "Workshop",
+      description:
+        "Afribot - Micro:bit (Participants finish final workshop, and are then introduced to \"Challenge case\"[where they have some time to work on their mini hackathon projects])",
+      guests: ["micro:bit"],
+      duration: "75",
+      start: "12:50:00 PM",
+      end: "2:05:00 PM",
+    },
+    {
+      event: "Feedback collection",
+      description: "Using google forms (qr code with link to survey)",
+      guests: ["everyone"],
+      duration: "10",
+      start: "2:05:00 PM",
+      end: "2:15:00 PM",
+    },
+  ];
+  
