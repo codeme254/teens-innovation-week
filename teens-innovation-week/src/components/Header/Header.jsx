@@ -37,6 +37,9 @@ const Header = () => {
         <Link className="header__nav--link" to="/speakers">
           speakers
         </Link>
+        <Link className="header__nav--link" to="/schedule">
+          schedule
+        </Link>
         <a
           href="https://forms.gle/bGjp6izcGZ5VKFdf7"
           target="_blank"
