@@ -519,10 +519,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-primary);
+  border-radius: 10px;
 }
 
 .social-media svg {

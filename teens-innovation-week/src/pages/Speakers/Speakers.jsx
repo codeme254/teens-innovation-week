@@ -5,8 +5,8 @@ import isaac from "../../assets/images/isaac-macharia.jpg";
 import drOmbui from "../../assets/images/dr-ombui.jpg";
 import kambo from "../../assets/images/kambo.jpeg";
 import imgDefault from "../../assets/images/user-placeholder.png";
-import img2 from "../../assets/images/speaker7.jpg";
-import img3 from "../../assets/images/speaker8.jpg";
+import Partners from "../../components/Partners/Partners";
+
 const Speakers = () => {
   return (
     <div className="speakers">
@@ -49,6 +49,7 @@ const Speakers = () => {
           occupation="CEO Afribot"
         />
       </div>
+      <Partners />
       <Footer />
     </div>
   );

@@ -44,7 +44,6 @@ const ContactRecap = () => {
             className="social-media"
           >
             <IoLogoWhatsapp />
-            <p className="social-media__value">+254719802456</p>
           </a>
           <a
             href="https://www.facebook.com/WeAreSTEAMLabs"
@@ -55,7 +54,6 @@ const ContactRecap = () => {
           </a>
           <a href="tel:+254719802456" target="_blank" className="social-media">
             <TbPhoneCall />
-            <p className="social-media__value">+254719802456</p>
           </a>
           <a
             href="https://www.instagram.com/wearesteamlabs"
