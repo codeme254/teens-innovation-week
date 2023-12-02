@@ -39,7 +39,7 @@ const ContactRecap = () => {
             <BsTwitterX />
           </a>
           <a
-            href="https://wa.me/+254719802456"
+            href="https://wa.me/+254719802446"
             target="_blank"
             className="social-media"
           >
@@ -52,7 +52,7 @@ const ContactRecap = () => {
           >
             <IoLogoFacebook />
           </a>
-          <a href="tel:+254719802456" target="_blank" className="social-media">
+          <a href="tel:+254719802446" target="_blank" className="social-media">
             <TbPhoneCall />
           </a>
           <a
