@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { day1, day2 } from "./scheduleData";
-import { useTable } from "react-table";
+import { day1, day2, day3 } from "./scheduleData";
 import Table from "./Table";
 
 const Schedule = () => {
   const data = useMemo(() => day1, []);
   const dataDay2 = useMemo(() => day2, []);
+  const dataDay3 = useMemo(() => day3, []);
   const columns = useMemo(
     () => [
       {
@@ -53,6 +53,12 @@ const Schedule = () => {
           6<sup>th</sup> December 2023
         </h3>
         <Table columns={columns} data={dataDay2} />
+      </div>
+      <div className="table-container">
+        <h3 style={{ textAlign: "center" }}>
+          7<sup>th</sup> December 2023
+        </h3>
+        <Table columns={columns} data={dataDay3} />
       </div>
       <Footer />
     </div>

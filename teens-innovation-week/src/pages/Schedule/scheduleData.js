@@ -83,6 +83,7 @@ export const day1 = [
   },
 ];
 
+// day 2 data
 export const day2 = [
   {
     event: "Opening Remarks",
@@ -180,6 +181,114 @@ export const day2 = [
     guests: ["everyone"],
     duration: "10",
     start: "2:05:00 PM",
+    end: "2:15:00 PM",
+  },
+];
+
+// day 3 data
+export const day3 = [
+  {
+    event: "Opening Remarks",
+    description: "Open the event",
+    guests: ["MC"],
+    duration: "10",
+    start: "9:00:00 AM",
+    end: "9:10:00 AM",
+  },
+  {
+    event: "Challenge development",
+    description: "Participants work on their projects",
+    guests: ["Participants"],
+    duration: "60",
+    start: "9:10:00 AM",
+    end: "10:10:00 AM",
+  },
+  {
+    event: "Break",
+    description: "Break",
+    guests: ["Break"],
+    duration: "30",
+    start: "10:10:00 AM",
+    end: "10:40:00 AM",
+  },
+  {
+    event: "Challenge development",
+    description: "Participants finalise their projects ",
+    guests: ["Participants "],
+    duration: "30",
+    start: "10:40:00 AM",
+    end: "11:10:00 AM",
+  },
+  {
+    event: "Judging",
+    description:
+      "Judges aproach each group, where they present their idea kind of like in a science fair where they dispaly their pojects and show how it works",
+    guests: [
+      "Dr. Edward Ombui - Dean African Nazarene University",
+      ", ",
+      "Isaac Macharia - Mars Society Kenya",
+      ", ",
+      "Eng. Andrew Masila - Safaricom, Head of Innovation",
+    ],
+    duration: "60",
+    start: "11:10:00 AM",
+    end: "12:10:00 PM",
+  },
+  {
+    event: "Lunch",
+    description: "Lunch",
+    guests: ["Lunch"],
+    duration: "50",
+    start: "12:10:00 PM",
+    end: "1:00:00 PM",
+  },
+  {
+    event: "Judging",
+    description: "Judges are given time in private to finalize their results",
+    guests: [
+      "Dr. Edward Ombui - Dean African Nazarene University",
+      ", ",
+      "Isaac Macharia - Mars Society Kenya",
+      ", ",
+      "Eng. Andrew Masila - Safaricom, Head of Innovation",
+    ],
+    duration: "30",
+    start: "1:00:00 PM",
+    end: "1:30:00 PM",
+  },
+  {
+    event: "Teen Voices initiative",
+    description:
+      "In tandum, participants witness launch of teens voice initiative",
+    guests: [
+      "Maria Diaz - Think Learning Studio",
+      ", ",
+      "Shiv Shah - Crawford International School",
+      ", ",
+      "Hanwa Mate - Woodcreek School",
+      ", ",
+      "TAF student - ",
+      ", ",
+      "Afandi - Moderator",
+    ],
+    duration: "30",
+    start: "1:00:00 PM",
+    end: "1:30:00 PM",
+  },
+  {
+    event: "Awards and recognition",
+    description: "Awarding the winners and certificate",
+    guests: ["MC/Felix"],
+    duration: "15",
+    start: "1:30:00 PM",
+    end: "1:45:00 PM",
+  },
+  {
+    event: "Closing event",
+    description: "Closing remarks and ceremonial cake",
+    guests: ["MC"],
+    duration: "30",
+    start: "1:45:00 PM",
     end: "2:15:00 PM",
   },
 ];
